@@ -40,9 +40,9 @@
               Projetos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">+VERDE</a></li>
+              <li><a class="dropdown-item" href="/verde.html">+VERDE</a></li>
               <li><a class="dropdown-item" href="#">Plantadores de Agua</a></li>
-              <li><a class="dropdown-item" href="#">Capçula do Tempo</a></li>
+              <li><a class="dropdown-item" href="/capsula.html">Capsula do Tempo</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -62,7 +62,7 @@
 
 
 
-  <!-- carrocel slide -->
+  <!-- carrocel slide 
   <div id="carouselExampleCaptions" class="carousel slide col-8 m-auto mb-4" style="width: 100%;">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -106,7 +106,22 @@
     </button>
   </div>
 
-  <br>
+-->
+
+<div id="carouselExampleCaptions" class="carousel slide col-8 m-auto mb-4" style="width: 100%;">
+  <div class="carousel-indicators">
+  </div>
+  <div class="carousel-inner" style="overflow: hidden">
+    <div class="carousel-item active">
+      <img src="/img/banner_oasa.jpg" class="d-block w-100" alt="..." style="object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Organização Atitude Social e Ambiental</h5>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
 
 
 
@@ -192,19 +207,19 @@
 
   </div>
   <div class="row row-cols-1 row-cols-md-3 g-4 col-10 m-auto text-center">
-    <div class="project" content-id="projeto1">
+    <div class="project no-select" content-id="projeto1">
       <div class="icon_project">
         <img src="./img/plantadores_agua.jpg" alt="plantadores de água">
       </div>
       <h3 style="color: #0098da;">Plantadores de água</h3>
     </div>
-    <div class="project" content-id="projeto2">
+    <div class="project no-select" content-id="projeto2">
       <div class="icon_project">
         <img src="./img/maisverde.jpg" alt="projeto + verde">
       </div>
       <h3 style="color: rgb(30, 120, 30);">+Verde</h3>
     </div>
-    <div class="project" content-id="projeto3">
+    <div class="project no-select" content-id="projeto3">
       <div class="icon_project">
         <img src="./img/capsula_do_tempo.png" alt="cápsula do tempo">
       </div>
@@ -213,12 +228,14 @@
   </div>
 
   <div class="container-fluid row">
+    <!---->
     <div id="projeto1" class="content"
       style="flex-wrap: wrap; justify-content: space-around; width: 69vw; margin-top: 15vh;">
       <div class="imgproject col-md-4 col-12 mb-4 mb-md-0">
         <img src="./img/coite.jpg" class="img-fluid" alt="Ação na nascente de Coité">
       </div>
-      <div class="textproject col-md-4 col-12 mt-4 mt-md-0">
+      <div class="textproject col-md-4 col-12 mt-4 mt-md-0"
+        style="display: flex; justify-content: space-around; flex-direction: column;">
         <p>O projeto <span style="color: #0098da;">"Plantadores de Água"</span> visa a recuperação das nascentes do Rio
           Grande do Norte, com foco na preservação dos recursos hídricos. A <span
             style="color: rgb(30, 120, 30);">OASA</span> executa a iniciativa junto da <span
@@ -228,10 +245,41 @@
         </a>
       </div>
     </div>
-
+    <!---->
+    <div id="projeto2" class="content"
+      style="flex-wrap: wrap; justify-content: space-around; width: 69vw; margin-top: 15vh;">
+      <div class="imgproject col-md-4 col-12 mb-4 mb-md-0">
+        <img src="./img/imgmaisverde.jpg" class="img-fluid" alt="Caminhão de mudas">
+      </div>
+      <div class="textproject col-md-4 col-12 mt-4 mt-md-0"
+        style="display: flex; justify-content: space-around; flex-direction: column;">
+        <p>O <span style="color: rgb(30, 120, 30);">Projeto + Verde</span> consiste em um esforço conjunto para
+          implementação, manutenção e extensão de viveiros para cultivo de espécies arbóreas da Caatinga e Mata
+          Atlântica atuando também com agricultura familiar e educação ambiental junto da sociedade civil ,povos
+          originários, quilombolas, indígenas</p>
+        <a href="/verde.html"><button class="btn btn-outline-primary rounded-pill">Saiba mais</button>
+        </a>
+      </div>
+    </div>
+    <!---->
+    <div id="projeto3" class="content"
+      style="flex-wrap: wrap; justify-content: space-around; width: 69vw; margin-top: 15vh;">
+      <div class="imgproject col-md-4 col-12 mb-4 mb-md-0">
+        <img src="./img/capsulaimg.jpg" class="img-fluid" alt="Ação na nascente de Coité">
+      </div>
+      <div class="textproject col-md-4 col-12 mt-4 mt-md-0"
+        style="display: flex; justify-content: space-around; flex-direction: column;">
+        <p>O projeto da <span style="color: rgb(248, 156, 50);">Cápsula do Tempo</span> busca unir diversos segmentos da
+          sociedade para fortalecer laços e destacar iniciativas positivas para o meio ambiente no Rio Grande do Norte.
+          Um dos principais objetivos é apresentar o <span style="color: rgb(30, 120, 30);">Projeto +Verde</span>,
+          dedicado à recuperação da Caatinga por meio da produção de mudas e implantação de viveiros.</p>
+        <a href="/capsula.html"><button class="btn btn-outline-primary rounded-pill">Saiba mais</button>
+        </a>
+      </div>
+    </div>
+    <!---->
     <div class="divisao" style="background-color: #0098da; width: 60vw; min-height: 5px; margin: 15vh 1vw 5vh 1vw;">
     </div>
-
   </div>
 
 
@@ -249,10 +297,27 @@
     </div>
     <div class="map" style="max-width: 500px; padding: 1.3em; flex-shrink: 0;">
       <!--mapa do rio grande do norte com ow locais onde atuamos-->
-      <iframe title="" aria-label="Map" id="datawrapper-chart-DzDiB" src="https://datawrapper.dwcdn.net/DzDiB/1/"
+      <iframe title="" aria-label="Map" id="datawrapper-chart-DzDiB" src="https://datawrapper.dwcdn.net/DzDiB/4/"
         scrolling="no" frameborder="0" style="width: 100%; border: none;" height="392" data-external="1"></iframe>
-      <script
-        type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r, i = 0; r = e[i]; i++)if (r.contentWindow === a.source) { var d = a.data["datawrapper-height"][t] + "px"; r.style.height = d } } })) }();</script>
+
+      <script type="text/javascript">
+        !function () {
+          "use strict";
+          window.addEventListener("message", (function (a) {
+            if (void 0 !== a.data["datawrapper-height"]) {
+              var e = document.querySelectorAll("iframe");
+              for (var t in a.data["datawrapper-height"]) {
+                for (var r, i = 0; r = e[i]; i++) {
+                  if (r.contentWindow === a.source) {
+                    var d = a.data["datawrapper-height"][t] + "px";
+                    r.style.height = d;
+                  }
+                }
+              }
+            }
+          }));
+        }();
+      </script>
     </div>
   </div>
 

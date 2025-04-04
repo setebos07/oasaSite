@@ -1,0 +1,113 @@
+.content {
+    display: none;
+}
+
+.content.show {
+    display: flex;
+   
+}
+
+.nav-item{
+    margin: 0 3vw;
+}
+
+
+.container-fluid > ul > li > a{
+    text-decoration: none;
+    color: rgb(30,120,30);
+    transition: all 0.2s ease-out;
+    font-weight: bold;
+}
+
+.container-fluid a{
+    text-decoration: none;
+}
+
+.container-fluid > ul > li:hover{
+    -webkit-box-shadow: 2px 7px 0px -2px rgba(30,120,30,1);
+    -moz-box-shadow: 2px 7px 0px -2px rgba(30,120,30,1);
+    box-shadow: 2px 7px 0px -2px rgba(30,120,30,1);
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+}
+
+h1{
+    margin-bottom: 8vh;
+}
+
+@font-face {
+    font-family: "MinhaFonte";
+    src:    url("./avenir-regular_zjMOt/avenir/Avenir\ Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: "MinhaFonte", sans-serif;
+}
+
+/*---*/
+
+.row {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center;
+  }
+  
+  .project {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important; /* Alinha verticalmente */
+    align-items: center !important; /* Alinha horizontalmente */
+    transition: all 0.2s ease;
+  }
+
+  .project:hover{
+    transition: all 0.2s ease;
+    transform: scale(1.1);
+    -webkit-box-shadow: 0px 7px 0px 0px rgba(30,120,30,1);
+    -moz-box-shadow: 0px 7px 0px 0px rgba(30,120,30,1);
+    box-shadow: 0px 7px 0px 0px rgba(30,120,30,1);
+  }
+  
+  .icon_project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* Espaço entre o ícone e o título */
+    min-height: 120px;
+  }
+  
+  .icon_project img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    display: block;
+  }
+  
+  h3 {
+    min-height: 50px; /* Garante que todos os títulos tenham a mesma altura */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*----*/
+
+  @media screen and (max-width: 768px) {
+    .col-10 {
+      padding: 1em;
+    }
+    .texto {
+      width: 100%; /* O texto ocupará toda a largura disponível */
+      margin: 0;
+      padding: 1em; /* Reduzindo o padding */
+    }
+    .map {
+      width: 100%; /* O mapa ocupará toda a largura disponível */
+      margin-top: 2em; /* Adicionando um espaço entre o texto e o mapa */
+    }
+  }
+  
+/*seção dos projetos*/
+  

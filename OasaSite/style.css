@@ -111,3 +111,42 @@ h1{
   
 /*seção dos projetos*/
   
+/* Estilos para as tabs */
+.tab-btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.tab-btn.active {
+  background-color: rgb(30, 120, 30);
+}
+
+.tab-btn.active p {
+  color: white !important;
+}
+
+/* Conteúdo das tabs */
+.content-tab {
+  display: none;
+  padding: 30px 0;
+  align-items: center;
+}
+
+.content-tab.show {
+  display: flex;
+}
+
+/* Responsividade - Imagem abaixo do texto em mobile */
+@media (max-width: 992px) {
+  .content-tab {
+    flex-direction: column;
+  }
+  
+  .content-tab .text-center {
+    margin-top: 2rem;
+  }
+}
+
+/* Mantenha seus outros estilos existentes */

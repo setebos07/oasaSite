@@ -1,3 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+/*Projetos*/
+
 .content {
     display: none;
 }
@@ -10,7 +18,6 @@
 .nav-item{
     margin: 0 3vw;
 }
-
 
 .container-fluid > ul > li > a{
     text-decoration: none;
@@ -108,8 +115,6 @@ h1{
       margin-top: 2em; /* Adicionando um espaço entre o texto e o mapa */
     }
   }
-  
-/*seção dos projetos*/
   
 /* Estilos para as tabs */
 .tab-btn {

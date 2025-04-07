@@ -1,42 +1,17 @@
+const links = document.querySelectorAll('.btn');
 
+links.forEach(link => link.addEventListener('click', () => linkClicked(link)));
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Tab system
-    const tabButtons = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.content-tab');
-  
-    tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Remove active class from all buttons
-            tabButtons.forEach(btn => {
-                btn.classList.remove('active');
-                btn.querySelector('p').style.color = 'rgb(30, 120, 30)';
-            });
-            
-            // Add active class to clicked button
-            this.classList.add('active');
-            this.querySelector('p').style.color = 'white';
-            
-            // Hide all contents
-            tabContents.forEach(content => {
-                content.classList.remove('show');
-            });
-            
-            // Show corresponding content
-            const targetId = this.getAttribute('data-target');
-            const targetContent = document.getElementById(targetId);
-            targetContent.classList.add('show');
-            
-            // Scroll suave apenas em mobile (largura <= 768px)
-            if (window.innerWidth <= 768) {
-                targetContent.scrollIntoView({ 
-                    behavior: 'smooth', 
-                    block: 'start' 
-                });
-            }
-        });
-    });
-});
+const linkClicked = (link) => {
+
+    const contents = document.querySelectorAll('.content');
+    contents.forEach(content => content.classList.remove('show'));
+
+    const contentId = link.getAttribute('content-id');
+    const content = document.getElementById(contentId);
+
+    content.classList.add('show');
+}
 
 window.onload = function () {
 

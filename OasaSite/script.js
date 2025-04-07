@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Remove active class from all buttons
             tabButtons.forEach(btn => {
                 btn.classList.remove('active');
-                btn.querySelector('p').style.color = 'rgb(30, 120, 30)';
+                btn.querySelector('p').style.color = 'rgb(255, 255, 255)';
             });
             
             // Add active class to clicked button
